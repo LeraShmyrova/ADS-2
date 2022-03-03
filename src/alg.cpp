@@ -26,10 +26,13 @@ double calcItem(double x, uint16_t n) {
 }
 double expn(double x, uint16_t count) {
   count = 0;
+  uint16_t i = 1;
   double ch = 0;
-  while (count <= x) {
+  while (i <= count) {
   ch = ch + pown(x, count) / fact(count);
+  i += 1;  
   }
+  ch += 1;
   return ch;
 }
 double sinn(double x, uint16_t count) {
