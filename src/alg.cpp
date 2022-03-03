@@ -4,8 +4,8 @@
 
 
 double pown(double value, uint16_t n) {
-  uint16_t p = 1;
-  while (n != 0) {
+  double p = 1.0;
+  while (n >= 0) {
   p = p * value;
   n -= 1;
   }
@@ -30,7 +30,7 @@ double expn(double x, uint16_t count) {
   double ch = 0;
   while (i <= count) {
   ch = ch + pown(x, count) / fact(count);
-  i += 1;  
+  i += 1;
   }
   ch += 1;
   return ch;
