@@ -17,18 +17,18 @@ uint64_t fact(uint16_t n) {
   while (n != 0) {
   c = c * n;
   n -= 1;
-  }  
+  }
   return c;
 }
 double calcItem(double x, uint16_t n) {
-  res = pown(x,n) / fact(n);
+  double res = pown(x, n) / fact(n);
   return res;
 }
 double expn(double x, uint16_t count) {
   count = 0;
-  ch = 0;
+  double ch = 0;
   while (count <= x) {
-  ch = ch + pown(x,s) / fact( count);
+  ch = ch + pown(x, count) / fact(count);
   }
   return ch;
 }
