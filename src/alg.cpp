@@ -39,7 +39,7 @@ double sinn(double x, uint16_t count) {
   double six = 0;
   uint16_t st = 1;
   while (st <= count) {
-  six = six + (pown(-1, (st - 1)) * calcItem(x, (2 * st) - 2));
+  six = six + (pown(-1, (st - 1)) * calcItem(x, (2 * st) - 1));
   st +=1;
   }
   return six;
