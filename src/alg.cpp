@@ -16,7 +16,7 @@ uint64_t fact(uint16_t n) {
   uint64_t c = 1;
   uint64_t i = 1;
   while (i <= n) {
-  c = c * n;
+  c = c * i;
   i += 1;
   }
   return c;
